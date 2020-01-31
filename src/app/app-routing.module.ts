@@ -1,0 +1,30 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Routes, RouterModule } from '@angular/router';
+import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { CreateEmployeeComponent } from './create-employee/create-employee.component';
+import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
+import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+
+
+const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'about', component: AboutComponent},
+  { path: 'employees', component: EmployeeListComponent },
+  { path: 'add', component: CreateEmployeeComponent },
+  { path: 'update/:id', component: UpdateEmployeeComponent },
+  { path: 'details/:id', component: EmployeeDetailsComponent },
+];
+
+
+@NgModule({
+  declarations: [],
+  imports: [
+    CommonModule,RouterModule.forRoot(routes)],
+    exports: [RouterModule]
+  
+})
+export class AppRoutingModule { }
