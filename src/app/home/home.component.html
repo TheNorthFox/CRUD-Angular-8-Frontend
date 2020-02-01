@@ -1,13 +1,28 @@
+
 <div class="container">
   <br>
   <h3 style="text-align: center;">Employee Management Portal</h3>
   <hr>
-  <div class="card">
-    <div class="card-body">
-        <div class="text-center example-button-row">
-      <button mat-raised-button color="accent" routerLink="/employees" routerLinkActive="active">Employee List</button>
-      <button mat-raised-button color="warn" routerLink="/add">Add Employee</button>
-    </div>
+  <br>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body text-center">
+        <h4 class="card-title">Show List of Employees</h4>
+        <p class="card-text">list out all employes details from the data base with options to update, details and delete</p>
+        <a mat-raised-button routerLink="/employees" class="btn btn-primary">Employee List</a>
+      </div>
     </div>
   </div>
-</div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body text-center">
+        <h4 class="card-title">Create Employee</h4>
+        <p class="card-text">Add Employee details (first name, last name and email address to the employee portal</p>
+        <a mat-raised-button routerLink="/add" class="btn btn-primary">Add Employee</a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
