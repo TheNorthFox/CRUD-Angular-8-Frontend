@@ -7,11 +7,13 @@ import { UpdateEmployeeComponent } from './update-employee/update-employee.compo
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { LoginComponent } from './login/login.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
+  { path: 'login', component: LoginComponent },
   { path: 'about', component: AboutComponent},
   { path: 'employees', component: EmployeeListComponent },
   { path: 'add', component: CreateEmployeeComponent },

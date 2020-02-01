@@ -5,7 +5,7 @@ import { AppComponent } from "./app.component";
 import { CreateEmployeeComponent } from "./create-employee/create-employee.component";
 import { EmployeeListComponent } from "./employee-list/employee-list.component";
 import { EmployeeDetailsComponent } from "./employee-details/employee-details.component";
-import { FormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
 import { AppRoutingModule } from "./app-routing.module";
 import { UpdateEmployeeComponent } from "./update-employee/update-employee.component";
@@ -23,6 +23,7 @@ import {
   MatSidenavModule,
   MatListModule
 } from "@angular/material";
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -32,11 +33,11 @@ import {
     EmployeeDetailsComponent,
     UpdateEmployeeComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule,
     HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -47,7 +48,9 @@ import {
     MatMenuModule,
     MatListModule,
     MatSidenavModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
