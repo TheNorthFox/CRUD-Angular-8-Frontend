@@ -1,4 +1,16 @@
 # EmployeeClient
+This's employee portal UI for a fullstack web application
+    - Frontend: 
+            Angular 8
+    - Backend:
+            Springboot
+    - DB:
+            MYSQL
+            
+            
+    The backend springboot project can be found at:
+      - https://github.com/Min40/CRUD-Spring-Boot-Backend-
+      
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
 
