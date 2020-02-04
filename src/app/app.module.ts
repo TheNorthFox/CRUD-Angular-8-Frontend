@@ -21,9 +21,12 @@ import {
   MatProgressSpinnerModule,
   MatMenuModule,
   MatSidenavModule,
-  MatListModule
+  MatListModule,
+  MatFormFieldModule,
+  MatInputModule
 } from "@angular/material";
 import { LoginComponent } from './login/login.component';
+import { RegistrationComponent } from './registration/registration.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,8 @@ import { LoginComponent } from './login/login.component';
     UpdateEmployeeComponent,
     HomeComponent,
     AboutComponent,
-    LoginComponent
+    LoginComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +54,9 @@ import { LoginComponent } from './login/login.component';
     MatSidenavModule,
     MatProgressSpinnerModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

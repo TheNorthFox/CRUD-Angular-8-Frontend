@@ -8,12 +8,14 @@ import { EmployeeDetailsComponent } from './employee-details/employee-details.co
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
+import { RegistrationComponent } from './registration/registration.component';
 
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegistrationComponent },
   { path: 'about', component: AboutComponent},
   { path: 'employees', component: EmployeeListComponent },
   { path: 'add', component: CreateEmployeeComponent },
