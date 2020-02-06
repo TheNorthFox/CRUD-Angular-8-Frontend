@@ -10,6 +10,6 @@ export class AppComponent {
   title = 'EmployeeClient';
   
   // form control mode options are 'over', 'side', 'push'
-  mode = new FormControl('side');
+ // mode = new FormControl('side');
   
 }

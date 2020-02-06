@@ -12,6 +12,7 @@ import { UpdateEmployeeComponent } from "./update-employee/update-employee.compo
 import { HomeComponent } from "./home/home.component";
 import { AboutComponent } from "./about/about.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import {
   MatToolbarModule,
@@ -27,6 +28,8 @@ import {
 } from "@angular/material";
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { HelpComponent } from './help/help.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,9 @@ import { RegistrationComponent } from './registration/registration.component';
     HomeComponent,
     AboutComponent,
     LoginComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    HelpComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +61,8 @@ import { RegistrationComponent } from './registration/registration.component';
     FormsModule,
     ReactiveFormsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -9,12 +9,16 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { HelpComponent } from './help/help.component';
+import { UserComponent } from './user/user.component';
 
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'help', component: HelpComponent },
+  { path: 'user', component: UserComponent },
   { path: 'register', component: RegistrationComponent },
   { path: 'about', component: AboutComponent},
   { path: 'employees', component: EmployeeListComponent },
